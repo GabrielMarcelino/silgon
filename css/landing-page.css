@@ -1,0 +1,941 @@
+/*
+ * Start Bootstrap - Landing Page (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+.navbar-brand{padding: 0;}
+.navbar-brand img{ width: 100%; height: 100%;}
+@media(max-width: 300px){
+    .navbar-brand{padding: 0; width: 75%;}
+}
+.topnav {
+    font-size: 14px;
+}
+.nav li a{
+    color: #1694ff!important;
+    text-transform: uppercase;
+}
+.nav li a:hover{
+    text-decoration: underline;
+    opacity: 0.5;
+}
+.dropdown-menu{
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+.dropdown-menu li a{
+    padding: 4% 0% 4% 3%;
+}
+.dropdown-menu li a:hover{
+    background-color: #1694ff;
+    color: #fff!important;
+    text-decoration: none;
+}
+@media(max-width: 768px) {
+    .dropdown-menu li a:hover{
+    background-color: #fff;
+    color: #1694ff!important;
+    text-decoration: underline;
+    }
+}
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.intro-header {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../img/bg-drywall.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+@media(max-width: 500px){
+    .intro-divider{
+        width: 100%
+    }
+    .intro-header{
+        padding-bottom: 0px;
+    }
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+}
+
+.text-titulo h3{
+    text-align: center;
+    font-size: 2em;
+}
+.text-titulo h4{
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 2.7%;
+}
+.text-titulo h4 span{
+    color: #1694ff;
+    text-transform: uppercase;
+}
+
+/* SERVIÇOS */
+#serviços{
+    padding: 2% 0;
+}
+a .serviços-item{
+    display: inline-block;
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    color: #fff;
+}
+@media (max-width: 768px){
+    a .serviços-item{
+    display: inline-block;
+    float: left;
+    width: 50%;
+    text-align: center;
+    color: #fff;
+    }
+    .col-md-tudo{
+        padding: 0;
+    }
+}
+.serviços-item img{
+    margin: 5% auto 0;
+    max-width: 80%;
+}
+@media(max-width: 400px){
+    .serviços-item img{
+    margin: 10% auto 0;
+    max-width: 80%;
+    }
+    .serviços-item h2{
+        font-size: 1.5em;
+        margin: 1% auto 5%;
+    }
+}
+.serviços-item-eletrica{
+    background-color: #fd3854;
+}
+.serviços-item-eletrica:hover{
+    opacity: 0.7;
+}
+.serviços-item-eletrica:hover h2{
+    text-decoration: underline
+}
+
+.serviços-item-hidraulica{
+    background-color: #28b5c6;
+}
+.serviços-item-hidraulica:hover{
+    opacity: 0.7;
+}
+.serviços-item-hidraulica:hover h2{
+    text-decoration: underline;
+}
+
+.serviços-item-pintura{
+    background-color: #fdc300;
+}
+.serviços-item-pintura:hover{
+    opacity: 0.7;
+}
+.serviços-item-pintura:hover h2{
+    text-decoration: underline;
+}
+
+.serviços-item-alvenaria{
+    background-color: #095733;
+}
+.serviços-item-alvenaria:hover{
+    opacity: 0.7;
+}
+.serviços-item-alvenaria:hover h2{
+    text-decoration: underline;
+}
+
+.serviços-item-reparo{
+    background-color: #00e36e;
+}
+.serviços-item-reparo:hover{
+    opacity: 0.7;
+}
+.serviços-item-reparo:hover h2{
+    text-decoration: underline;
+}
+
+.serviços-item-drywall{
+    background-color: #a7a7a7;
+}
+.serviços-item-drywall:hover{
+    opacity: 0.7;
+}
+.serviços-item-drywall:hover h2{
+    text-decoration: underline;
+}
+
+.serviços-item-marcenaria{
+    background-color: #cfa267;
+}
+.serviços-item-marcenaria:hover{
+    opacity: 0.7;
+}
+.serviços-item-marcenaria:hover h2{
+    text-decoration: underline;
+}
+
+.serviços-item-tema{
+    background-color: #1694ff;
+}
+.serviços-item-tema:hover h2{
+    text-decoration: underline;
+}
+
+/* SERVIÇOS ITEM GERAL */
+.serviços-desc h2{
+    width: 100%;
+    margin: 2% 0%;
+    padding: 0.5% 0;
+    text-align: center;
+    color: #FFF;
+    text-transform: uppercase;
+}
+.serviços-desc-total{
+    width: 90%;
+    margin: 1% 5%;
+    padding: 0
+}
+.serviços-desc-item{
+    float: left;
+    display: inline-block;
+    width: 21%;
+    margin-right: 5.33%;
+    border: 1px solid #222;
+    border-radius: 10px;
+    margin-bottom: 3%;
+}
+.serviços-desc-item:nth-of-type(4){
+    margin-right: 0;
+}
+.serviços-desc-item:nth-of-type(8){
+    margin-right: 0;
+}
+.serviços-desc-item:nth-of-type(12){
+    margin-right: 0;
+}
+.serviços-desc-item:nth-of-type(16){
+    margin-right: 0;
+}
+.serviços-desc-item:nth-of-type(20){
+    margin-right: 0;
+}
+.serviços-desc-item:nth-of-type(24){
+    margin-right: 0;
+}
+.serviços-desc-item:nth-of-type(28){
+    margin-right: 0;
+}
+.serviços-desc-item:nth-of-type(32){
+    margin-right: 0;
+}
+.serviços-desc-item:nth-of-type(36){
+    margin-right: 0;
+}
+.serviços-desc-item:nth-of-type(40){
+    margin-right: 0;
+}
+.serviços-desc-item:nth-of-type(44){
+    margin-right: 0;
+}
+.serviços-desc-item:nth-of-type(48){
+    margin-right: 0;
+}
+.serviços-desc-item:nth-of-type(52){
+    margin-right: 0;
+}
+
+.serviços-desc-item img{
+    width: 100%;
+    margin-bottom: 0;
+}
+.serviços-desc-item h3{
+    background-color: rgba(0,0,0,.4);
+    bottom: 70%;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 700;
+    left: 0;
+    margin: 0 auto;
+    padding: 6px;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+    width: 80%;
+    text-align: center;
+    z-index: 2;
+}
+.serviços-desc-item p{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0%;
+    color: #000;
+}
+.p-serviço{
+    color: #434343!important;
+    font-weight: 300;
+}
+.serviço-nao-encontrado{
+    width: 70%;
+    float: left;
+    margin: 0 15% 2%;
+    background-color: #ccc;
+    padding: 1% 0;
+}
+.serviço-nao-encontrado h4{
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 1.5em;
+}
+.btn-nao-encontrado{
+    width: 70%;
+    margin: 2% 15%;
+}
+
+.btn-eletrica{
+    width: 90%;
+    margin: 1% 5% 5%;
+    background-color: #fd3854;
+    color: #fff;
+}
+.btn-eletrica:hover{
+    background-color: #FFF;
+    color: #fd3854;
+    border: 1px solid #fd3854;
+}
+
+.btn-hidraulica{
+    width: 90%;
+    margin: 1% 5% 5%;
+    background-color: #28b5c6;
+    color: #fff;
+}
+.btn-hidraulica:hover{
+    background-color: #FFF;
+    color: #28b5c6;
+    border: 1px solid #28b5c6;
+}
+
+.btn-pintura{
+    width: 90%;
+    margin: 1% 5% 5%;
+    background-color: #fdc300;
+    color: #fff;
+}
+.btn-pintura:hover{
+    background-color: #FFF;
+    color: #fdc300;
+    border: 1px solid #fdc300;
+}
+
+.btn-alvenaria{
+    width: 90%;
+    margin: 1% 5% 5%;
+    background-color: #095733;
+    color: #fff;
+}
+.btn-alvenaria:hover{
+    background-color: #FFF;
+    color: #095733;
+    border: 1px solid #095733;
+}
+
+.btn-reparo{
+    width: 90%;
+    margin: 1% 5% 5%;
+    background-color: #00e36e;
+    color: #fff;
+}
+.btn-reparo:hover{
+    background-color: #FFF;
+    color: #00e36e;
+    border: 1px solid #00e36e;
+}
+
+.btn-drywall{
+    width: 90%;
+    margin: 1% 5% 5%;
+    background-color: #a7a7a7;
+    color: #fff;
+}
+.btn-drywall:hover{
+    background-color: #FFF;
+    color: #a7a7a7;
+    border: 1px solid #a7a7a7;
+}
+
+.btn-marcenaria{
+    width: 90%;
+    margin: 1% 5% 5%;
+    background-color: #cfa267;
+    color: #fff;
+}
+.btn-marcenaria:hover{
+    background-color: #FFF;
+    color: #cfa267;
+    border: 1px solid #cfa267;
+}
+
+.btn-tema{
+    width: 60%;
+    margin: 1% 20% 5%;
+    background-color: #1694ff;
+    color: #fff;
+    padding: 1% 0;
+    font-size: 1.5em;
+}
+.btn-tema:hover{
+    background-color: #FFF;
+    color: #1694ff;
+    border: 1px solid #1694ff;
+}
+
+@media(max-width: 1200px) {
+    .serviços-desc-total{
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0;
+   }
+    .serviço-nao-encontrado{
+    width: 80%;
+    float: left;
+    margin: 0 10% 2%;
+    background-color: #ccc;
+    padding: 1% 0;
+   }
+}
+
+@media(max-width: 991px) {
+    .serviços-desc-total{
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0
+    }
+    .serviços-desc-item{
+    float: left;
+    display: inline-block;
+    width: 30%;
+    margin-right: 5%;
+    border: 1px solid #222;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    }
+    .serviços-desc-item:nth-of-type(4){
+    margin-right: 5%;
+    }
+    .serviços-desc-item:nth-of-type(8){
+    margin-right: 5%;
+    }
+    .serviços-desc-item:nth-of-type(16){
+    margin-right: 5%;
+    }
+    .serviços-desc-item:nth-of-type(20){
+    margin-right: 5%;
+    }
+    .serviços-desc-item:nth-of-type(28){
+    margin-right: 5%;
+    }
+    .serviços-desc-item:nth-of-type(32){
+    margin-right: 5%;
+    }
+    .serviços-desc-item:nth-of-type(36){
+    margin-right: 5%;
+    }
+    .serviços-desc-item:nth-of-type(40){
+    margin-right: 5%;
+    }
+    .serviços-desc-item:nth-of-type(44){
+    margin-right: 5%;
+    }
+    .serviços-desc-item:nth-of-type(48){
+    margin-right: 5%;
+    }
+    .serviços-desc-item:nth-of-type(52){
+    margin-right: 5%;
+    }
+    
+    .serviços-desc-item:nth-of-type(3){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(6){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(9){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(12){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(15){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(18){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(21){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(24){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(27){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(30){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(33){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(36){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(39){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(41){
+    margin-right: 5%;
+    }
+    
+    .serviços-desc-item:nth-of-type(42){
+    margin-right: 0%;
+    }
+    
+    .serviços-desc-item:nth-of-type(44){
+    margin-right: 5%;
+    }
+    
+    .serviços-desc-item:nth-of-type(45){
+    margin-right: 0%;
+    }
+    
+    .serviços-desc-item:nth-of-type(47){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(50){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(53){
+    margin-right: 0%;
+    }
+}
+
+@media(max-width: 641px) {
+    .serviços-desc-total{
+    width: 96%;
+    margin: 1% 2%;
+    padding: 0
+    }
+    .serviços-desc-item{
+    float: left;
+    display: inline-block;
+    width: 45%;
+    margin-right: 10%;
+    border: 1px solid #222;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    }
+    .serviços-desc-item:nth-child(2n + 0){
+        margin-right: 0!important;
+    }
+    .serviços-desc-item:nth-of-type(2){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(4){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(6){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(8){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(10){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(12){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(14){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(16){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(18){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(20){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(22){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(24){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(26){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(28){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(30){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(32){
+    margin-right: 0%;
+    }
+    
+    .serviços-desc-item:nth-of-type(33){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(39){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(41){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(45){
+    margin-right: 10%;
+    }
+    
+    
+    .serviços-desc-item:nth-of-type(34){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(36){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(38){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(40){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(42){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(44){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(46){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(48){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(50){
+    margin-right: 0%;
+    }
+    .serviços-desc-item:nth-of-type(52){
+    margin-right: 0%;
+    }
+    
+    .serviços-desc-item:nth-of-type(1){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(3){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(5){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(7){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(9){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(11){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(13){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(15){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(17){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(19){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(21){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(23){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(25){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(27){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(29){
+    margin-right: 10%;
+    }*/
+    
+    
+}
+
+@media(max-width: 451px) {
+    .serviços-desc-total{
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0
+    }
+    .serviços-desc-item{
+    float: left;
+    display: inline-block;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    border: 1px solid #222;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    }
+    .serviços-desc-item:nth-of-type(2){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(4){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(6){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(8){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(10){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(12){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(14){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(16){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(18){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(20){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(22){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(24){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(26){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(28){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(30){
+    margin-right: 10%;
+    }
+    
+    .serviços-desc-item:nth-of-type(1){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(3){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(5){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(7){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(9){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(11){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(13){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(15){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(17){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(19){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(21){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(23){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(25){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(27){
+    margin-right: 10%;
+    }
+    .serviços-desc-item:nth-of-type(29){
+    margin-right: 10%;
+    }
+    .serviço-nao-encontrado{
+    width: 90%;
+    float: left;
+    margin: 0 5% 2%;
+    background-color: #ccc;
+    padding: 1% 0;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+/*   PORTFÓLIO   */
+.portfolio-itens{
+    margin-bottom: 2%;
+}
+.portfolio-itens img{
+    width: 100%;
+}
+.portfolio-itens img:hover{
+    opacity: 0.8;
+}
+
+
+/* FOOTER  (RODAPÉ)  */
+
+footer {
+    padding: 1% 0 2%;
+    background-color: #1694ff;
+    color: #fff;
+}
+@media(max-width: 500px) {
+    .footer-item{
+        margin-bottom: 10%;
+    }
+}
+
+.footer-item h4{
+    text-align: center;
+    font-size: 1.6em;
+    margin-bottom: 7%;
+}
+.footer-item ul{
+    list-style: none;
+    display: inline-block;
+}
+.footer-item ul li{
+    width: 30%;
+    display: inline-block;
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 4%;
+}
+.footer-item .li-total{
+    width: 40%;
+    display: inline-block;
+}
+.footer-item ul li a{
+    color: #FFF;
+}
+.footer-item p{
+    text-align: center;
+    width: 100%;
+}
+.footer-item .terço{
+    width: 33.33%;
+    display: inline-block;
+    float: left;
+}
+@media(max-width: 430px){
+    .footer-item .terço{
+    width: 100%;
+    display: inline-block;
+    float: left;
+    }
+}
+.footer-item-face{
+    text-align: center;
+}
+p.copyright {
+    margin: 3% 0 0;
+    color: #ccc;
+    text-align: center;
+}
+p.copyright a{
+    color: #fff;
+}
